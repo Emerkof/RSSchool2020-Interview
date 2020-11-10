@@ -1,0 +1,30 @@
+.task1__span {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+/*
+  Какая ширина элемента будет при
+  box-sizing: content-box/border-box?
+
+  Какой box-sizing лучше применять?
+*/
+.task2__div {
+  box-sizing: content-box;
+  width: 200px;
+  border: 2px solid red;
+  padding: 5px;
+  margin: 5px;
+}
+
+/*
+  Почему по краям документа белые полосы?
+  Как их убрать?
+
+  Что такое reset.css?
+*/
+.task3__main {
+  height: 100vh;
+  background-color: black;
+}
