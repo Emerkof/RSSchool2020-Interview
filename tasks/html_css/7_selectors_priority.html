@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7_selectors_priority</title>
+
+    <!-- Какой цвет будет у div'a? -->
+
+    <style>
+      [class="box"] {
+        background-color: green;
+      }
+
+      #box.box {
+        background-color: cyan;
+      }
+
+      main > #box {
+        background-color: yellow;
+      }
+
+      main .box {
+        background-color: black;
+      }
+
+      #box {
+        background-color: red;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+
+        background-color: blue;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <main>
+      <div class="box" id="box"></div>
+    </main>
+  </body>
+</html>

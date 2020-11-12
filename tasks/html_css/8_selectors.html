@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8_selectors</title>
+
+    <!-- Какой цвет будет у div'a? -->
+
+    <style>
+      /* Выбрать элемент, у которого однвременно присутствуют классы
+      .list и .unordered-list */
+
+      /* Выбрать все li, которые являются потомками (нк обязательно прямыми) элемента .list  */
+
+      /* Выбрать только те <li>, которые являются прямыми
+        потомками элемента .list */
+    </style>
+  </head>
+  <body>
+    
+    <ul class="list unordered-list">
+      <li>
+        <ul>
+          <li>
+            <a href="">li1 a1</a>  <!--Выбрать именно этот элемент-->
+            <a href="">li1 a2</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul> <!-- Выбрать именно этот элемент-->
+          <li>
+            <a href="">li2 a1</a> <!--Выбрать элемент <a> (li2 a2), который является непосредственным правым соседом этого элемента-->
+            <a href="">li2 a2</a>
+            <a href="">li2 a3</a>
+          </li>
+        </ul>
+      </li>
+      <li> <!-- Выбрать именно этот элемент-->
+        <ul>
+          <li>
+            <a href="">li3 a1</a> <!--Выбрать все элементы <a>, которые следует за этим элементом (li3 a2, l3 a3)-->
+            <span>li3 span1</span> 
+            <a href="">li3 a2</a>
+            <span>li3 span2</span> 
+            <a href="">li3 a3</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </body>
+</html>
