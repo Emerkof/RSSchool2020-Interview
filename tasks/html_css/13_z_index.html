@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_z-index</title>
+
+    <!-- На экране должен отображаться жёлтый контейнер вместо зеленого-->
+
+    <style>
+      .wrapper {
+        position: relative;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .first {
+        position: absolute;
+        background-color: yellow;
+      }
+
+      .second {
+        position: absolute;
+        background-color: green;;
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <main class="wrapper">
+      <div class="first box"></div>
+      <div class="second box"></div>
+    </main>
+  </body>
+</html>

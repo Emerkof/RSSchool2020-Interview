@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_flex</title>
+
+    <!-- 
+      Расставить все три контейнера .box в одну горизонтальную линию с помощью flexbox.
+      Контейнеры должны быть центрированы вертикально.
+      Левый контейнер должен быть прижат к левому краю родителя, правый - к правому, а центральный 
+      - расположен посередине родительского контейнера.
+     -->
+
+     <!-- Доп задание: контейнеры должны располагаться в следующем порядке (справа налево): 
+     red, green, blue. Использовать flex-свойство для достижения данного результата -->
+    <style>
+      /* TASK 1 */
+      .flex-container {
+        height: 50vh;
+        background-color: beige;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flex-container">
+      <div class="box green"></div>
+      <div class="box red"></div>
+      <div class="box blue"></div>
+    </section>
+    
+  </body>
+</html>

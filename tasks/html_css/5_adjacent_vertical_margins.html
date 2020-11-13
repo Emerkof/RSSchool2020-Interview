@@ -11,17 +11,17 @@
         и нижним блоками? Как исправить ситуацию? (С доп. разметкой)
       */
 
-      .task5-1 > div {
+      .box {
         width: 200px;
         height: 200px;
         background-color: blueviolet;
       }
 
-      .task5-1__upper {
+      .box-wrapper-1 > .box_upper {
         margin-bottom: 40px;
       }
 
-      .task5-1__lower {
+      .box-wrapper-1 > .box_lower {
         margin-top: 40px;
       }
 
@@ -29,37 +29,29 @@
         Какое суммарное расстояние будет между верхним
         и нижним блоками? Как исправить ситуацию? (С/Без доп. разметки)
       */
-
-      .task5-2 > div {
-        width: 200px;
-        height: 200px;
-        background-color: blueviolet;
-      }
-
-      .task5-2__upper {
+      .box-wrapper-2 > .box_upper {
         margin-bottom: 40px;
-        border: 1px solid transparent;
       }
 
-      .task5-2__lower {
+      .box-wrapper-2 > .box_lower {
         margin-top: 40px;
       }
     </style>
   </head>
   <body>
     
-    <section class="task5-1">
-      <div class="task5-1__upper"></div>
-      <div class="task5-1__lower"></div>
+    <section class="box-wrapper-1">
+      <div class="box box_upper"></div>
+      <div class="box box_lower"></div>
     </section>
 
       <!-- TASK 5-2 -->
 
-      <!-- <section class="task5-2">
-        <div class="task5-2__upper"></div>
+      <!-- <section class="box-wrapper-2">
+        <div class="box box_upper"></div>
       </section>
-      <section class="task5-2">
-        <div class="task5-2__lower"></div>
+      <section class="box-wrapper-2">
+        <div class="box box_lower"></div>
       </section> -->
   </body>
 </html>
