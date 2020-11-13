@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2_event_propagation</title>
+</head>
+  <style>
+    .container {
+      width: 200px;
+      height: 200px;
+      background-color: beige;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    .btn {
+      vertical-align: middle;
+    }
+  </style>
+
+<body>
+  <div class="container">
+    <button class="btn">Click me!</button>
+  </div>
+
+  <script>
+    const container = document.querySelector('.container');
+    const btn = document.querySelector('.btn');
+
+    
+    container.addEventListener('click', (e) => {
+      alert('Container clicked!');
+    });
+    /*
+      Модифицировать обработчик событий таким образом,
+      чтобы при клике на кнопку срабатывал только alert('Button clicked!');
+    */
+
+    btn.addEventListener('click', (e) => {
+      alert('Button clicked!');
+    });    
+  </script>
+</body>
+</html>
