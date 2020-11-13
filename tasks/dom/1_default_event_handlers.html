@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1_default_event_handlers</title>
+</head>
+<body>
+  <input id="checkbox" type="checkbox">
+  <label for="checkbox">Check me</label>
+
+  <script>
+    const checkbox = document.querySelector('#checkbox');
+
+    /*
+      Модифицировать обработчик событий таким образом,
+      чтобы при клике на чекбокс он оставался пустым (без галочки).
+    */
+    checkbox.addEventListener('click', (e) => {
+      alert('Checkbox clicked');
+    });    
+  </script>
+</body>
+</html>
