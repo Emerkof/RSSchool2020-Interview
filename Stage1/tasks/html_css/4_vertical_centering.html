@@ -8,20 +8,30 @@
     <style>
       .wrapper {
         height: 100vh;
+        background-color: beige;
+        position: relative;
       }
 
       .box {
         width: 200px;
         height: 200px;
         background-color: brown;
+        position: absolute;
+        top: calc(50% - 100px)
       }
     </style>
   </head>
   <body>
     <!-- Центрировать квадрат по вертикали -->
 
-    <div class="wrapper">
+    <div class="wrapper" data-source="google">
       <div class="box"></div>
     </div>
+
+    <script>
+      const elem = '';
+
+      
+    </script>
   </body>
 </html>

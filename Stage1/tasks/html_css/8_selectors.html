@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8_selectors</title>
+
+    <style>
+      ul > li:last-child a:first-child~span{
+        color: cadetblue;
+      }
+    </style>
+
+  </head>
+  <body>
+    <ul class="list unordered-list">
+      <li>
+        <a href="">li1 a1</a>
+        <a href="">li1 a2</a>
+      </li>
+      <li>
+        <a href="">li2 a1</a>
+        <a href="">li2 a2</a>
+        <a href="">li2 a3</a>     
+      </li>
+      <li>
+        <a href="">li3 a1</a> 
+        <span>li3 span1</span> 
+        <a href="">li3 a2</a>
+        <span>li3 span2</span> 
+        <a href="">li3 a3</a>
+      </li>
+    </ul>
+
+  </body>
+</html>

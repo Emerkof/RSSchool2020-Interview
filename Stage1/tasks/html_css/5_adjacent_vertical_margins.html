@@ -17,20 +17,16 @@
         background-color: blueviolet;
       }
 
-      .box-wrapper-1 > .box_upper {
-        margin-bottom: 40px;
-      }
-
-      .box-wrapper-1 > .box_lower {
-        margin-top: 40px;
-      }
-
       /*
         Какое суммарное расстояние будет между верхним
         и нижним блоками? Как исправить ситуацию? (С/Без доп. разметки)
       */
       .box-wrapper-2 > .box_upper {
         margin-bottom: 40px;
+      }
+
+      .box-wrapper-2 {
+        overflow: auto;
       }
 
       .box-wrapper-2 > .box_lower {
@@ -40,18 +36,14 @@
   </head>
   <body>
     
-    <section class="box-wrapper-1">
-      <div class="box box_upper"></div>
-      <div class="box box_lower"></div>
-    </section>
 
       <!-- TASK 5-2 -->
 
-      <!-- <section class="box-wrapper-2">
+      <section class="box-wrapper-2">
         <div class="box box_upper"></div>
       </section>
       <section class="box-wrapper-2">
         <div class="box box_lower"></div>
-      </section> -->
+      </section>
   </body>
 </html>
